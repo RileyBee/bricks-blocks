@@ -16,7 +16,9 @@ public class PullFromCSV
         {
             String[] data = line.split(",");
             
-            MaterialLists.newBricks.add(new Bricks(data[0], Double.parseDouble(data[1]), Double.parseDouble(data[2]), Double.parseDouble(data[3]), Double.parseDouble(data[4])));
+            MaterialLists.newBricks.add(new Bricks(data[0],
+                    Double.parseDouble(data[1]), Double.parseDouble(data[2]),
+                    Double.parseDouble(data[3]), Double.parseDouble(data[4])));
         }
     }
     
