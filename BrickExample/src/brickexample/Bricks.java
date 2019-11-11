@@ -3,11 +3,11 @@ package brickexample;
 public class Bricks
 {
     // fields
-    private String materialName;
-    private double materialCost;
-    private double length;
-    private double width;
-    private double height;
+    private final String materialName;
+    private final double materialCost;
+    private final double length;
+    private final double width;
+    private final double height;
     
     
     /**
@@ -25,32 +25,7 @@ public class Bricks
         length = len;
         width = w;
         height = h;
-    }
-    
-    public void setName(String name)
-    {
-        materialName = name;
-    }
-    
-    public void setCost(double cost)
-    {
-        materialCost = cost;
-    }
-    
-    public void setLength(double len)
-    {
-        length = len;
-    }
-    
-    public void setWidth(double w)
-    {
-        width = w;
-    }
-    
-    public void setHeight(double h)
-    {
-        height = h;
-    }  
+    } 
         
     public String getName()
     {
