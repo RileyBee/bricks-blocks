@@ -1,0 +1,13 @@
+11/25/2019 Roadmap
+- User interactable program
+- Menu
+- Solid wall calculation
+	- No. of bricks/ Palletts of cubes
+	- volume of cement/ How many bags
+	- dimensions
+- output as invoice
+
+12/02/2019
+- Calculations for patterns
+- Calculations for Windows
+- Calulations for arches
