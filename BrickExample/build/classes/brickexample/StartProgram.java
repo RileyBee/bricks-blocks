@@ -21,11 +21,6 @@ public class StartProgram
         {
             System.out.print(displayBricks.get(i).getName()+ " ");
         }
-        
-        
-        DBConnection dBConn = new DBConnection();
     }
-    
-    
     
 }
