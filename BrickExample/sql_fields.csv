@@ -1,0 +1,2 @@
+id,material,unit_cost,length,width,height,volume,material_flag
+auto_increment,Varchar(25),"Decimal(19, 4)","Decimal(10, 4)","Decimal(10, 4)","Decimal(10, 4)","Decimal(10, 4)",Char

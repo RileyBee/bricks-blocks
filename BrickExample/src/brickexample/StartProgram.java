@@ -19,7 +19,7 @@ public class StartProgram
         
         for (int i = 0; i < displayBricks.size(); i++)
         {
-            System.out.print(displayBricks.get(i).getName()+ " ");
+            //System.out.print(displayBricks.get(i).getName()+ " ");
         }
         
         
