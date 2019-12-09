@@ -229,7 +229,7 @@ public class Project_version_1 {
         newJFrame.getContentPane().add(jLabel2);
         jLabel2.setBounds(50, 200, 70, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Null\\Desktop\\bricks-blocks-bricks-blocks-v1\\JavaSchoolBuilderInvoice.jpg"));
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Null\\Documents\\GitHub\\bricks-blocks\\JavaSchoolBuilderInvoice.jpg"));
         newJFrame.getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 920, 710);
 
