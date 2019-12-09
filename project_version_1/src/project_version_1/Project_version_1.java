@@ -5,8 +5,11 @@
  * Selection 4: Fancy or regular bricks?:
  */
 package project_version_1;
+import java.awt.BorderLayout;
 import javax.swing.JOptionPane;
 import java.text.NumberFormat;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class Project_version_1 {
     public static void main(String[] args) {
@@ -49,14 +52,16 @@ public class Project_version_1 {
         
         int bricksNeeded = calculateBricksNeeded(choice1, choice2, choice3, choice4);
         int cementNeeded = calculateCementNeeded(bricksNeeded);
-        double brickCost = calculateBrickCost(bricksNeeded);
-        double cementCost = calculateCementCost(cementNeeded);
+        float brickCost = calculateBrickCost(bricksNeeded);
+        float cementCost = calculateCementCost(cementNeeded);
         NumberFormat fmt = NumberFormat.getCurrencyInstance();
         
         System.out.println("Bricks needed: "+bricksNeeded);
         System.out.println("Brick cost: "+fmt.format(brickCost));
         System.out.println("Mortar Needed: "+cementNeeded);
         System.out.println("Mortar Cost: "+fmt.format(cementCost));
+        
+        OutputData(bricksNeeded, cementNeeded, BrickCost, cementCost)
         
     }
     
@@ -88,18 +93,29 @@ public class Project_version_1 {
         return cementNeeded;
     }
     
-    public static double calculateBrickCost (int bricksNeeded){
-        double brickPallet= Math.ceil(bricksNeeded/510.0);
-        double brickCost = brickPallet*275;
+    public static float calculateBrickCost (int bricksNeeded){
+        float brickPallet= (float) Math.ceil(bricksNeeded/510.00);
+        float brickCost = brickPallet*275;
         
         return brickCost;
     }
     
-    public static double calculateCementCost (int cementNeeded){
-        double cementPallet= cementNeeded/35.0;
-        double cementCost =cementPallet*500.0;        
+    public static float calculateCementCost (int cementNeeded){
+        float cementPallet= (float) (cementNeeded/35.0);
+        float cementCost = (float) (cementPallet*500.0);        
         
         return cementCost;
+    }
+    //THIS IS THE OUTPUT FILE
+    public static void OutputData(int bricksNeeded, int cementNeeded, float BrickCost, float cementCost)
+    {
+        JFrame frame = new JFrame("FrameDemo");
+        JLabel contentPane = new JLabel();
+        contentPane.setIcon("C:\Users\Null\Documents\GitHub\bricks-block JavaSchoolBuilderInvoice");
+        frame.getcontenPane().add(emptyLabel, BorderLayout.CENTER);
+        frame.pack();
+        frame.setVisible(true);
+        
     }
     
 }
