@@ -5,11 +5,10 @@
  * Selection 4: Fancy or regular bricks?:
  */
 package project_version_1;
-import java.awt.BorderLayout;
+import static java.awt.BorderLayout.CENTER;
 import javax.swing.JOptionPane;
 import java.text.NumberFormat;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class Project_version_1 {
     public static void main(String[] args) {
@@ -61,8 +60,10 @@ public class Project_version_1 {
         System.out.println("Mortar Needed: "+cementNeeded);
         System.out.println("Mortar Cost: "+fmt.format(cementCost));
         
-        OutputData(bricksNeeded, cementNeeded, BrickCost, cementCost)
-        
+        JFrame output = JFrameProject.main(bricksNeeded, cementNeeded, brickCost, cementCost);
+        output.setVisible(true);
+        output.setSize(915, 875);
+        output.setLocation(500, 100);
     }
     
     public static int calculateBricksNeeded(int choice1, int choice2, int choice3, int choice4){
@@ -105,17 +106,6 @@ public class Project_version_1 {
         float cementCost = (float) (cementPallet*500.0);        
         
         return cementCost;
-    }
-    //THIS IS THE OUTPUT FILE
-    public static void OutputData(int bricksNeeded, int cementNeeded, float BrickCost, float cementCost)
-    {
-        JFrame frame = new JFrame("FrameDemo");
-        JLabel contentPane = new JLabel();
-        contentPane.setIcon("C:\Users\Null\Documents\GitHub\bricks-block JavaSchoolBuilderInvoice");
-        frame.getcontenPane().add(emptyLabel, BorderLayout.CENTER);
-        frame.pack();
-        frame.setVisible(true);
-        
     }
     
 }
