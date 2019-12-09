@@ -229,12 +229,14 @@ public class Project_version_1 {
         newJFrame.getContentPane().add(jLabel2);
         jLabel2.setBounds(50, 200, 70, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Null\\Desktop\\bricks-blocks-bricks-blocks-v1")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Null\\Desktop\\bricks-blocks-bricks-blocks-v1\\JavaSchoolBuilderInvoice.jpg")); // NOI18N
         newJFrame.getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 920, 710);
 
         newJFrame.pack();
         newJFrame.setVisible(true);
+        newJFrame.setSize(915, 875);
+        newJFrame.setLocation(500, 100);
         
     }
     
